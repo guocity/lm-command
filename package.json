@@ -1,6 +1,6 @@
 {
   "name": "lm-command",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node CLI wrapper for litert-lm with model auto-discovery and saved backend settings.",
   "repository": {
     "type": "git",
