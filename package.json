@@ -1,0 +1,35 @@
+{
+  "name": "lm-command",
+  "version": "0.1.0",
+  "description": "Node CLI wrapper for litert-lm with model auto-discovery and saved backend settings.",
+  "bin": {
+    "lm": "bin/lm.js"
+  },
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "scripts"
+  ],
+  "scripts": {
+    "start": "node bin/lm.js",
+    "test:smoke": "node bin/lm.js --help",
+    "pack:check": "npm pack --dry-run",
+    "publish:npm": "node scripts/publish.js",
+    "publish:npm:dry-run": "node scripts/publish.js --dry-run"
+  },
+  "keywords": [
+    "cli",
+    "litert-lm",
+    "lm",
+    "gemma",
+    "huggingface"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
