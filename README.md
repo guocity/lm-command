@@ -60,9 +60,16 @@ The publish script will:
 
 - use `NPM_TOKEN` from the environment when available
 - otherwise fall back to your existing npm login
-- check whether the package name already exists
+- automatically bump to the next patch version when npm already has the current one
+- keep a manually higher local version if you already bumped it yourself
+- require a clean git working tree for real releases
+- commit the version bump as `release: vX.Y.Z`
+- create a matching git tag `vX.Y.Z`
+- push the commit and tag to `origin` after npm publish succeeds
 - run `npm pack --dry-run`
 - publish with `--access public`
+
+For `--dry-run`, it previews the git commit, tag, and push steps without changing git history.
 
 ## Usage
 

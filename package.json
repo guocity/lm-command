@@ -2,6 +2,14 @@
   "name": "lm-command",
   "version": "0.1.0",
   "description": "Node CLI wrapper for litert-lm with model auto-discovery and saved backend settings.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guocity/lm-command.git"
+  },
+  "homepage": "https://github.com/guocity/lm-command#readme",
+  "bugs": {
+    "url": "https://github.com/guocity/lm-command/issues"
+  },
   "bin": {
     "lm": "bin/lm.js"
   },
